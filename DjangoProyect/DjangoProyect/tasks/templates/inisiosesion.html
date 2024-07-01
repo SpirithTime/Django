@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <style>
+    .login-container {
+      margin: 50px auto;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form action="iniciosesion.html" method="post">
+      <input type="text" name="rut" placeholder="RUT" required>
+      <input type="text" name="username" placeholder="Nombre/Correo" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <a type="submit" class="button" href="Index.html">Iniciar Sesión</a>
+    </form>
+  </div>
+</body>
+</html>
